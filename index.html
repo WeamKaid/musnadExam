@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment and Review System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="novel">
+        <h1 class="novel">I am Rotting in Fear</h1>
+        <img src="rotting.jpg", class="novel">
+    </br></br>
+            <a href="theNovel.html">
+                <button> Read </button>
+            </a>
+        </button>
+    </div>
+   
+    <h2>Comments and Reviews</h2>
+    
+    <div id="comment-form">
+        <form id="submitComment" method="POST">
+            <div class="form-group">
+                <label for="comment">Your Comment:</label>
+                <textarea class="form-control" id="comment" name="comment"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <input type="number" class="form-control" id="rating" name="rating" min="1" max="5">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <h3>All Comments</h3>
+    <div id="comments-section">
+        <!-- Dynamic content will be loaded here -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="comments.js"></script>
+</body>
+</html>
